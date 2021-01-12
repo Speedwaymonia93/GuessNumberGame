@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Guess the dice number is higher or lower</title>
+  <meta name="description" content="Game to guess if the next number shown will be higher or lowe">
+  <meta name="author" content="Monika Strzałka">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hanalei+Fill&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!-- Title section-->
+            <div class="row d-flex justify-content-center test">
+                <h2 class="h2-style">Welcome to the guessing number game</h2>
+                <p class="p-style">The rules are simple:</p>
+                <ul class="p-style">
+                    <li class="list-element">The game has 30 rounds</li>
+                    <li class="list-element">Each time you have to guess if the next dice number will be higher or lower </li>
+                    <li class="list-element">For each correct guess you will gain 0.1 point</li>
+                </ul>
+                <p class="p-style">In the upper right corner you will see your current game progeress and the number of remaining rounds</p>
+                <p class="p-style">You can close the app at any time and the progrss will be saved</p>
+            </div>
+            <!-- card with dice -->
+            <div class="row d-flex justify-content-center">
+                <div class="dice-img">
+                    <img id="img-dice" class="img-style" src="http://roll.diceapi.com/images/poorly-drawn/d6/1.png" />
+                </div>
+            </div>
+
+            <!-- buttons to guess -->
+            <div class="row d-flex justify-content-center">
+                    <button id="lower" type="button" class="btn btn-warning btn-lg button-style" onclick=checkGuess()>Lower</button>
+                    <button id="higher" type="button" class="btn btn-success btn-lg button-style" onclick=checkGuess()>Higher</button>
+            </div>
+
+            <!-- Rounds counter + point counter-->
+            <div class="row round-style">
+                <h2 class="h2-rp-style">Remaining rounds</h2>
+                <p class="round" id="round"></p>
+            </div>
+            <div class="row point-style">
+                <h2 class="h2-rp-style">Points</h2>
+                <p class="point" id="point"></p>
+            </div>
+
+            <!-- Guess history -->
+            <div class="row">
+                <h2 class="h2-rp-style">Guesses history: </h2>
+                <ul class="guesses" id="guessesHistory">
+                </ul>
+            </div>
+        </div>
+        
+            <!-- game over page div -->
+            <div class="modal-window" id="game-over">
+                <div class="row game-over-modal d-flex justify-content-center">
+                    <h3 class="h3-style">Game over!</h3>
+                    <p class="p-style-game-over">You run out of rounds.</p>
+                    <p class="p-style-game-over">Your score: <span id="final-score"></span></p>
+                    <p class="p-style-game-over">Click "START" button to start new game.</p>
+                    <button class="btn btn-primary modal-button" onclick=closeStartModal()>START</button>
+                </div>
+            </div>
+             <!-- -->
+
+             <!-- modal window to restore or not game results -->
+            <div class="modal-window-restart" id="restart">
+                <div class="row game-over-modal d-flex justify-content-center">
+                    <h3 class="h3-style">Restart the game</h3>
+                    <p class="p-style-game-over">Reload the previous game?</p>
+                    <button class="btn btn-success modal-button-restart" onclick=loadGame()>YES</button>
+                    <button class="btn btn-danger modal-button-restart" onclick=openNewGame()>NO</button>
+
+                </div>
+            </div>
+             <!-- -->
+    </main>
+
+
+
+
+<!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

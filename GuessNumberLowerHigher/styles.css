@@ -1,0 +1,181 @@
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height: 100vh;
+    font-family: 'Bungee Outline', cursive;
+    color: white;
+
+
+}
+.dice-img{
+    width: 177px;
+    height: 177px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-style{
+    width: 150px;
+    margin: 20px;
+    font-family: 'Hanalei Fill', cursive;}
+
+.test{
+    text-align: center;
+    margin: 20px;
+    background: inherit;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 500px rgba(255,255,255, 0.2);
+
+}
+
+.list-element{
+    list-style-type: none;
+}
+
+.h2-style{
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 40px;
+}
+.p-style{
+    font-family: 'Fjalla One', sans-serif;
+    font-size:20px;
+}
+.round-style{
+    width: 300px;
+    height: 150px;
+    margin: 35px;
+    font-family: 'Fjalla One', sans-serif;
+    position: absolute;
+    top:40%;
+    left:0;
+    text-align: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 500px rgba(255,255,255, 0.2);
+    background: inherit;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.point-style{
+    box-shadow: inset 0 0 0 500px rgba(255,255,255, 0.2);
+    background: inherit;
+    overflow: hidden;
+    width: 300px;
+    height: 150px;
+    margin:35px;
+    font-family: 'Fjalla One', sans-serif;
+    position: absolute;
+    top:40%;
+    right:0;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.round{
+    font-size: 20px;
+}
+.point{
+    font-size: 20px;
+}
+.h2-rp-style{
+    font-family: 'Hanalei Fill', cursive;
+}
+.guesses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+
+.li-element-style{
+    margin: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+.img-element-style{
+    width:20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.game-over-div{
+    display: flex;
+    flex-direction: row;
+    background: teal;
+    visibility: visible;
+}
+.game-over-modal{
+    
+    width: 600px;
+    height: 350px;
+    border: 1px solid #9fd132;;
+    font-family: 'Fjalla One', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 500px rgba(255,255,255, 0.2);
+    background: inherit;
+    overflow: hidden;
+    
+}
+.modal-window{
+    visibility: visible;
+    display:flex;
+    align-items: center;
+  justify-content: center;
+    background:cyan;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 20px;
+    background-color: #a8eb12;
+}
+.h3-style{
+    font-family: 'Hanalei Fill', cursive;
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: #808080;
+    text-shadow:2px 2px white;
+}
+.p-style-game-over{
+    color:#a6a6a6;
+    font-size: 30px;
+}
+.modal-button{
+    width: 150px;
+    height:40px;
+}
+
+.modal-window-restart{
+    visibility: visible;
+    display:flex;
+    align-items: center;
+  justify-content: center;
+    background:cyan;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 20px;
+    background-color: #3d48e4;
+}
+.modal-button-restart{
+    width: 150px;
+    height: 40px;
+    margin: 30px;
+}
+
+.modal-window-restart{
+    visibility: hidden;
+    display: none;
+}
