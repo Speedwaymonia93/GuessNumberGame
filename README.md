@@ -1,5 +1,5 @@
 # GuessNumberName
- A simple game that let the user guess if the next number will be the next number on the dice. 
+ A simple game that let the user guess if the next number on the dice will be higher or lower. 
 
 # Main functionalities
 * a user has 30 rounds
